@@ -1,0 +1,21 @@
+<span>
+   
+    <h2>
+        {{patients}}
+    </h2>        
+    <div >
+        <h3 class='any'></h3>
+            <!-- {{ patient }}<br> -->
+            <!-- {{ patient.admissionDate }}<br> -->
+            <img src={{ patient.image }} class=image/>
+    </div>
+</span>
+
+<script>
+    const any = document.querySelector('.any')
+    let patients = {{patients}}
+    patients.map(patient=> {
+        console.log(patient.patientName)
+    })
+
+</script>
